@@ -15,19 +15,41 @@
             max-width: 300px;
             margin: 0 auto;
         }
-        input button{
+        input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <h1>Login</h1>
-    <form action="#" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
+    <form id="loginForm">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
+    <p id="errorMessage" class="error"></p>
+
+    <script>
+        // JavaScript to validate the form
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (username === '' || password === '') {
+                event.preventDefault(); // Prevent form submission
+                errorMessage.textContent = 'Both fields are required!';
+            } else {
+                errorMessage.textContent = ''; // Clear error message
+                alert('Login successful!'); // Temporary message
+            }
+        });
+    </script>
 </body>
 </html>
