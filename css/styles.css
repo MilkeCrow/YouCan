@@ -3,39 +3,47 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
- 
-/* Ensure the file name and path are correct */
-background-image: url('../images/background.jpg');
-background-size: cover; /* Ensures the image covers the whole background */
-background-repeat: no-repeat; /* Prevents the image from repeating */
-background-position: center; /* Centers the image */
+
+    /* Ensure the file name and path are correct */
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    /* Ensures the image covers the whole background */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center;
+    /* Centers the image */
 
 
 }
 
 form {
-font-family: Arial, sans-serif;
-max-width: 300px;
-margin: 50px auto;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 5px;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-input, button {
-width: 100%; 
-padding: 10px; 
-box-sizing: border-box; 
-margin: 5px 0;
-}button:hover {
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
-transform: scale(1.1); /* Slightly enlarges the button */
-transition:box-shadow transform 0.3s ease;
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
 
-background: linear-gradient(to right, #ff7f50, #1e90ff);
-color: white;
-border: 2px solid #ff7f50;
-transition: border 0.3s ease;
+button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+    transform: scale(1.1);
+    /* Slightly enlarges the button */
+    transition: box-shadow transform 0.3s ease;
+
+    background: linear-gradient(to right, #ff7f50, #1e90ff);
+    color: white;
+    border: 2px solid #ff7f50;
+    transition: border 0.3s ease;
 
 
 
